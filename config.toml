@@ -1,0 +1,20 @@
+baseURL = "http://domain.com"
+title = "Podcast title"
+copyright = "Domain.com"
+theme = "hugocast"
+disableKinds = ["sitemap"]
+
+[params]
+  defaultContentLanguage = "en-US" 
+  startyear = "2020"
+  author = "HB"
+  email = "hb@emailaddress.com"
+  description = "This is my podcast"
+  explicit = true
+  podcastlogo = "podcastlogo.png"
+  itunecategory = ["Comedy","Technology","Arts"]
+
+[taxonomies]
+  tag = ""
+  group = ""
+  category = ""

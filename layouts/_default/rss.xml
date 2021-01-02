@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+    xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">
+<channel>
+<title>{{ .Site.Title }}</title>
+<link>{{ .Site.BaseURL }}</link>
+<language>{{ .Site.Params.defaultContentLanguage | default "en-US" }}</language>
+<copyright>&#169; {{ .Site.Params.startYear }} {{ .Site.Copyright }}</copyright>
+<itunes:author>{{ .Site.Params.author }}</itunes:author>
+<description>{{ .Site.Params.description }}</description>
+<itunes:owner>
+    <itunes:name>{{ .Site.Title }}</itunes:name>
+    <itunes:email>{{ .Site.Params.email }}</itunes:email>
+</itunes:owner>
+<itunes:explicit>{{ .Site.Params.explicit }}</itunes:explicit>
+<itunes:image href="{{ .Site.BaseURL }}/{{ .Site.Params.podcastlogo }}"/>
+{{range .Site.Params.itunecategory}}<itunes:category text="{{ . }}" />
+{{end}}
+{{range .Pages}}
+    <item>
+        <title>{{ .Title }}</title>
+        <pubDate>{{ .Date.Format "Mon, 2 Jan, 2006 15:04:05 UTC" }}</pubDate>
+        <description>{{ .Description}}</description>
+        <content:encoded>{{ .Page.Params.encoded}}</content:encoded>
+        <enclosure url="{{ .Params.url}}" length="1" type="audio/mpeg"/>
+        <itunes:subtitle>{{ .Params.subtitle}}</itunes:subtitle>
+        <itunes:summary>{{ .Params.summary}}</itunes:summary>
+        <itunes:duration>{{ .Params.duration}}</itunes:duration>
+        <guid isPermaLink="{{ .Params.ispermalink}}"></guid>
+    </item>
+{{end}}
+</channel>
+</rss>
