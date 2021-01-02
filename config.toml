@@ -1,20 +1,20 @@
-baseURL = "http://domain.com"
-title = "Podcast title"
-copyright = "Domain.com"
-theme = "hugocast"
-disableKinds = ["sitemap"]
+baseURL = "http://domain.com" # Your domain
+  title = "Podcast title" # Your podcast title
+  copyright = "Domain.com" # Your copyright information
+  theme = "hugocast" # Do nothing
+  disableKinds = ["sitemap"] # Do nothing
 
 [params]
-  defaultContentLanguage = "en-US" 
-  startyear = "2020"
-  author = "HB"
-  email = "hb@emailaddress.com"
-  description = "This is my podcast"
-  explicit = true
-  podcastlogo = "podcastlogo.png"
-  itunecategory = ["Comedy","Technology","Arts"]
+  defaultContentLanguage = "en-US" # Your podcast default language
+  startyear = "2020" # Start year
+  author = "HB" # Your name
+  email = "hb@emailaddress.com" # Your email address
+  description = "This is my podcast" # Your podcast description
+  explicit = true # True or false
+  podcastlogo = "podcastlogo.png" # Your podcast logo
+  itunecategory = ["Comedy","Technology","Arts"] # Your podcast category, check the category, https://podcasts.apple.com/us/genre/podcasts/id26
 
 [taxonomies]
-  tag = ""
-  group = ""
-  category = ""
+  tag = "" # Do nothing
+  group = "" # Do nothing
+  category = "" # Do nothing
