@@ -2,12 +2,12 @@ name = "hugocast"
 license = "MIT"
 licenselink = ""
 description = "A podcasting tool based on hugo"
-homepage = "https://github.com/hzb/hugocast"
+homepage = "https://github.com/tourcoder/hugocast"
 tags = ["podcast", "hugo", "hugocast"]
 features = ["podcast"]
 min_version = "0.1"
 
 [author]
-  name = "HB"
-  homepage = "https://github.com/hzb/hugocast"
-  repo = "https://github.com/hzb/hugocast.git"
+  name = "Bin Hua"
+  homepage = "https://github.com/tourcoder/hugocast"
+  repo = "https://github.com/tourcoder/hugocast.git"

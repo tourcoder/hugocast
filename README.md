@@ -49,4 +49,4 @@ Please feel free to submit your PR or issue.
 
 [MIT](LICENSE)
 
-Copyright (C) 2020-present, HB
+Copyright (C) 2020-present, Bin Hua 
