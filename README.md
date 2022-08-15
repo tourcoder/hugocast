@@ -21,7 +21,7 @@ A podcasting tool based on hugo, you can use this hugo theme to build your own P
 	  defaultContentLanguage = "en-US" # Your podcast default language
 	  startyear = "2020" # Start year
 	  author = "Bin Hua" # Your name
-	  email = "forhua@gmail.com" # Your email address
+	  email = "bin@tourcoder.com" # Your email address
 	  description = "This is my podcast" # Your podcast description
 	  explicit = true # True or false
 	  podcastlogo = "podcastlogo.png" # Your podcast logo
